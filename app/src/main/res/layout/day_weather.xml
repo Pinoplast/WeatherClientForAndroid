@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:gravity="center_vertical|left"
+    android:paddingLeft="16dp"
+    android:id="@+id/content_item_root">
+
+    <ImageView
+        android:id="@+id/item_icon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@android:drawable/ic_delete"
+        android:tint="@color/colorPrimary"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/lbl_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hello_world"
+        android:textSize="5pt"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_alignBottom="@+id/item_icon"
+        android:layout_toRightOf="@+id/item_icon"
+        android:layout_toEndOf="@+id/item_icon" />
+
+    <TextView
+        android:id="@+id/lbl_t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hello_world"
+        android:textSize="10pt"
+        android:layout_above="@+id/lbl_day"
+        android:layout_alignLeft="@+id/lbl_day"
+        android:layout_alignStart="@+id/lbl_day" />
+
+
+</RelativeLayout>
